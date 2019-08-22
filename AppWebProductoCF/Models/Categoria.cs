@@ -11,7 +11,7 @@ namespace AppWebProductoCF.Models
         public int CategoriaID { get; set; }
         [Required(ErrorMessage = "Ingrese un nombre.")]
         [StringLength(50, MinimumLength = 3,
-            ErrorMessage = "El nombre no debe tener más de 50 caracteres")]
+            ErrorMessage = "El nombre no debe tener más de 50 caracteres, ni menos de 3 caracteres")]
 
         public string Nombre { get; set; }
         [StringLength(255,
